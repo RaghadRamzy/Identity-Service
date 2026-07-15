@@ -14,9 +14,7 @@ namespace Identity.infrastructure.Data.Config
             builder.Property(x => x.Description)
                 .HasMaxLength(300);
 
-            builder.HasMany(x => x.RolePermissions)
-                .WithOne(x => x.Role)
-                .HasForeignKey(x => x.RoleId);
+           
         }
     }
 }

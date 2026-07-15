@@ -14,8 +14,7 @@ namespace Identity.infrastructure.Data.Context
     {
         public IdentityDbContext(DbContextOptions<IdentityDbContext> options) : base(options) { }
 
-        public DbSet<Permission> Permissions => Set<Permission>();
-        public DbSet<RolePermission> RolePermissions => Set<RolePermission>();
+     
         public DbSet<RefreshTokens> RefreshTokenss => Set<RefreshTokens>();
         public DbSet<AuditLog> AuditLogs => Set<AuditLog>();
 

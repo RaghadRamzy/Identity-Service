@@ -1,4 +1,5 @@
 ﻿using Identity.Domain.Entity.identity;
+using Identity.Domain.Enum;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -9,7 +10,7 @@ namespace Identity.Domain.Entity
     {
         public Guid Id { get; set; } = Guid.NewGuid();
         public Guid? UserId { get; set; }
-        public string Action { get; set; } = string.Empty;
+        public AuditAction Action { get; set; } 
         public DateTime DateTime { get; set; } = DateTime.Now;
         public string? IpAddress { get; set; }
         public string? UserAgent { get; set; }

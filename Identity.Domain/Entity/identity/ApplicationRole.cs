@@ -9,6 +9,5 @@ namespace Identity.Domain.Entity.identity
     {
         public string Description { get; set; }
 
-        public ICollection<RolePermission> RolePermissions { get; set; }
     }
 }
