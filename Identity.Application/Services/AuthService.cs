@@ -34,10 +34,13 @@ namespace Identity.Application.Services
             _clientValidator = clientValidator;
         }
 
+        //private static readonly string[] DefaultSelfRegisterRoles = { "Customer" };
+
         public async Task<Result<AuthResponse>> RegisterAsync(RegisterRequest request)
         {
+            
             var result = await _identityService.CreateUserAsync(
-                request.Username, request.FullName, request.Email, request.PhoneNumber, request.Password, request.Role);
+                request.Username, request.FullName, request.Email, request.PhoneNumber, request.Password, request.Roles); // request.roles
 
             if (!result.Succeeded || result.Data is null)
                 return Result<AuthResponse>.Failure(result.Errors);
