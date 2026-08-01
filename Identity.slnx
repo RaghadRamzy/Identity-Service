@@ -4,4 +4,5 @@
   <Project Path="Identity.Domain/Identity.Domain.csproj" />
   <Project Path="Identity.infrastructure/Identity.infrastructure.csproj" />
   <Project Path="Identity.Tests/Identity.Tests.csproj" />
+  <Project Path="service.Api/service.Api/service.Api.csproj" />
 </Solution>

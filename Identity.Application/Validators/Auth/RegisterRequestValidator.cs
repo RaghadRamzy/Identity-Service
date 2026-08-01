@@ -21,8 +21,8 @@ namespace Identity.Application.Validators.Auth
                 .EmailAddress();
 
             RuleFor(x => x.PhoneNumber)
-                .NotEmpty()
-                .MaximumLength(20);
+               .NotEmpty().WithMessage("Phone number is required.");
+              
 
             RuleFor(x => x.Password)
                 .NotEmpty()

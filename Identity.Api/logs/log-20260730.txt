@@ -1,0 +1,82 @@
+2026-07-30 09:50:58.650 +03:00 [INF] User profile is available. Using 'C:\Users\ragha\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-30 09:51:02.497 +03:00 [INF] Executed DbCommand (277ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Description], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @normalizedName
+2026-07-30 09:51:03.009 +03:00 [INF] Executed DbCommand (224ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Description], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @normalizedName
+2026-07-30 09:51:03.150 +03:00 [INF] Executed DbCommand (131ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Description], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @normalizedName
+2026-07-30 09:51:03.166 +03:00 [WRN] AdminSeed:Email / Username / Password are not fully configured - skipping bootstrap admin user. Set them (e.g. via user-secrets or environment variables) if you need one created on startup.
+2026-07-30 09:51:03.766 +03:00 [INF] Executed DbCommand (206ms) [Parameters=[@cutoff='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[CreatedByIp], [r].[CreatedDate], [r].[ExpirationDate], [r].[IsRevoked], [r].[Token], [r].[UpdatedDate], [r].[UserAgent], [r].[UserId]
+FROM [RefreshTokenss] AS [r]
+WHERE [r].[IsRevoked] = CAST(1 AS bit) OR [r].[ExpirationDate] < @cutoff
+2026-07-30 09:51:03.803 +03:00 [INF] Now listening on: https://localhost:7165
+2026-07-30 09:51:03.808 +03:00 [INF] Now listening on: http://localhost:5267
+2026-07-30 09:51:04.440 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-30 09:51:04.444 +03:00 [INF] Hosting environment: Development
+2026-07-30 09:51:04.446 +03:00 [INF] Content root path: C:\Users\ragha\source\repos\Identity\Identity.Api
+2026-07-30 09:51:04.591 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7165/swagger/index.html - null null
+2026-07-30 09:51:05.282 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7165/swagger/index.html - 304 null null 709.3973ms
+2026-07-30 09:51:05.305 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7165/swagger/swagger-ui-bundle.js - null null
+2026-07-30 09:51:05.305 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7165/swagger/index.css - null null
+2026-07-30 09:51:05.305 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7165/swagger/swagger-ui.css - null null
+2026-07-30 09:51:05.312 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7165/_vs/browserLink - null null
+2026-07-30 09:51:05.352 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7165/swagger/index.css - 304 null null 47.9699ms
+2026-07-30 09:51:05.352 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7165/swagger/swagger-ui.css - 304 null null 47.9654ms
+2026-07-30 09:51:05.369 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7165/swagger/swagger-ui-bundle.js - 304 null null 64.953ms
+2026-07-30 09:51:05.305 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7165/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-30 09:51:05.305 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7165/swagger/index.js - null null
+2026-07-30 09:51:05.305 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7165/swagger/swagger-ui-standalone-preset.js - null null
+2026-07-30 09:51:05.422 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7165/swagger/index.js - 304 null null 117.5962ms
+2026-07-30 09:51:05.479 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7165/swagger/swagger-ui-standalone-preset.js - 304 null null 175.4539ms
+2026-07-30 09:51:05.480 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7165/_framework/aspnetcore-browser-refresh.js - 200 14929 application/javascript; charset=utf-8 176.6115ms
+2026-07-30 09:51:05.531 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7165/_vs/browserLink - 200 null text/javascript; charset=UTF-8 221.6105ms
+2026-07-30 09:51:05.744 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7165/swagger/v1/swagger.json - null null
+2026-07-30 09:51:05.781 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7165/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 36.8666ms
+2026-07-30 18:27:07.162 +03:00 [INF] User profile is available. Using 'C:\Users\ragha\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-30 18:27:11.895 +03:00 [INF] Executed DbCommand (361ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Description], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @normalizedName
+2026-07-30 18:27:12.417 +03:00 [INF] Executed DbCommand (231ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Description], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @normalizedName
+2026-07-30 18:27:12.619 +03:00 [INF] Executed DbCommand (188ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Description], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @normalizedName
+2026-07-30 18:27:12.645 +03:00 [WRN] AdminSeed:Email / Username / Password are not fully configured - skipping bootstrap admin user. Set them (e.g. via user-secrets or environment variables) if you need one created on startup.
+2026-07-30 18:27:13.541 +03:00 [INF] Executed DbCommand (236ms) [Parameters=[@cutoff='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[CreatedByIp], [r].[CreatedDate], [r].[ExpirationDate], [r].[IsRevoked], [r].[Token], [r].[UpdatedDate], [r].[UserAgent], [r].[UserId]
+FROM [RefreshTokenss] AS [r]
+WHERE [r].[IsRevoked] = CAST(1 AS bit) OR [r].[ExpirationDate] < @cutoff
+2026-07-30 18:27:13.572 +03:00 [INF] Now listening on: https://localhost:7165
+2026-07-30 18:27:13.579 +03:00 [INF] Now listening on: http://localhost:5267
+2026-07-30 18:27:13.806 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-30 18:27:13.810 +03:00 [INF] Hosting environment: Development
+2026-07-30 18:27:13.813 +03:00 [INF] Content root path: C:\Users\ragha\source\repos\Identity\Identity.Api
+2026-07-30 18:27:14.619 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7165/swagger/index.html - null null
+2026-07-30 18:27:15.464 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7165/swagger/index.html - 304 null null 858.216ms
+2026-07-30 18:27:15.511 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7165/swagger/swagger-ui-standalone-preset.js - null null
+2026-07-30 18:27:15.511 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7165/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-30 18:27:15.511 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7165/swagger/swagger-ui.css - null null
+2026-07-30 18:27:15.512 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7165/swagger/index.js - null null
+2026-07-30 18:27:15.511 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7165/swagger/index.css - null null
+2026-07-30 18:27:15.560 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7165/swagger/swagger-ui-standalone-preset.js - 304 null null 47.9929ms
+2026-07-30 18:27:15.559 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7165/swagger/swagger-ui.css - 304 null null 48.305ms
+2026-07-30 18:27:15.563 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7165/swagger/index.js - 304 null null 50.3587ms
+2026-07-30 18:27:15.512 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7165/_vs/browserLink - null null
+2026-07-30 18:27:15.511 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7165/swagger/swagger-ui-bundle.js - null null
+2026-07-30 18:27:15.574 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7165/_framework/aspnetcore-browser-refresh.js - 200 14929 application/javascript; charset=utf-8 62.6389ms
+2026-07-30 18:27:15.574 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7165/swagger/index.css - 304 null null 63.691ms
+2026-07-30 18:27:15.650 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7165/swagger/swagger-ui-bundle.js - 304 null null 138.5164ms
+2026-07-30 18:27:15.755 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7165/_vs/browserLink - 200 null text/javascript; charset=UTF-8 238.8363ms
+2026-07-30 18:27:16.127 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7165/swagger/v1/swagger.json - null null
+2026-07-30 18:27:16.183 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7165/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 55.3331ms

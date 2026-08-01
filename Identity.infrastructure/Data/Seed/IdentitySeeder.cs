@@ -6,15 +6,10 @@ using Microsoft.Extensions.Logging;
 
 namespace Identity.infrastructure.Data.Seed
 {
-    /// <summary>
-    /// Runs once at startup. Guarantees the roles the system depends on exist, and - only if
-    /// credentials are supplied via configuration - creates a first Admin user so there is a way
-    /// to call the Admin-only endpoints on a brand new database. No admin password is ever
-    /// hardcoded here; if AdminSeed:Password isn't configured, admin bootstrapping is skipped.
-    /// </summary>
+   
     public static class IdentitySeeder
     {
-        private static readonly string[] DefaultRoles = { "Admin", "Customer" };
+        private static readonly string[] DefaultRoles = { "Admin", "Customer" , "RestaurantOwner" };
 
         public static async Task SeedAsync(IServiceProvider serviceProvider)
         {
@@ -63,8 +58,7 @@ namespace Identity.infrastructure.Data.Seed
             }
 
             if (await userManager.FindByEmailAsync(email) is not null)
-                return; // already seeded on a previous run
-
+                return; 
             var adminUser = new ApplicationUser
             {
                 UserName = username,

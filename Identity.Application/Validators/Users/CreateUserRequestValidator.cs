@@ -21,8 +21,8 @@ namespace Identity.Application.Validators.Users
                 .EmailAddress();
 
             RuleFor(x => x.PhoneNumber)
-                .NotEmpty()
-                .MaximumLength(20);
+               .NotEmpty().WithMessage("Phone number is required.")
+               .Matches(@"^01[0125][0-9]{8}$").WithMessage("Phone number must be a valid Egyptian mobile number (e.g. 01012345678).");
 
             RuleFor(x => x.TemporaryPassword)
                 .NotEmpty()

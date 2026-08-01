@@ -14,6 +14,7 @@ namespace Identity.Api.Filters
             _serviceProvider = serviceProvider;
         }
 
+
         public async Task OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
         {
             foreach (var argument in context.ActionArguments.Values)
