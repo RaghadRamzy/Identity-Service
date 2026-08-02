@@ -27,20 +27,27 @@ builder.Services.AddSwaggerGen(options =>
     });
 });
 
-
-builder.Services.AddAuthentication("Bearer")
-    .AddJwtBearer("Bearer", options =>
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
     {
-        options.RequireHttpsMetadata = false; 
-        options.Authority = builder.Configuration.GetValue<string>("Identity:AuthorityUrl");
-        options.Audience = builder.Configuration.GetValue<string>("Identity:ApiResourceName");
+        var jwtSettings = builder.Configuration.GetSection("JwtSettings");
+
         options.TokenValidationParameters = new TokenValidationParameters
         {
-            ValidAudience = builder.Configuration.GetValue<string>("Identity:ApiResourceName"),
-            ValidateAudience = true
+            ValidateIssuer = true,
+            ValidIssuer = jwtSettings["Issuer"],
+
+            ValidateAudience = true,
+            ValidAudience = jwtSettings["Audience"],
+
+            ValidateIssuerSigningKey = true,
+            IssuerSigningKey = new SymmetricSecurityKey(
+                Encoding.UTF8.GetBytes(jwtSettings["Secret"]!)),
+
+            ValidateLifetime = true,
+            ClockSkew = TimeSpan.Zero
         };
     });
-
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())

@@ -26,19 +26,21 @@ namespace Identity.infrastructure.Services
             var expirationMinutes = double.Parse(jwtSettings["AccessTokenExpirationMinutes"] ?? "15");
             var expiration = DateTime.UtcNow.AddMinutes(expirationMinutes);
 
+            var audiences = jwtSettings.GetSection("Audience").Get<string[]>() ?? Array.Empty<string>();
+
             var claims = new List<Claim>
-            {
-                new(JwtRegisteredClaimNames.Sub, user.Id.ToString()),
-                new(JwtRegisteredClaimNames.Email, user.Email),
-                new(ClaimTypes.NameIdentifier, user.Id.ToString()),
-                new(ClaimTypes.Name, user.Username),
-                new(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
-            };
+    {
+        new(JwtRegisteredClaimNames.Sub, user.Id.ToString()),
+        new(JwtRegisteredClaimNames.Email, user.Email),
+        new(ClaimTypes.NameIdentifier, user.Id.ToString()),
+        new(ClaimTypes.Name, user.Username),
+        new(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
+    };
             claims.AddRange(user.Roles.Select(r => new Claim(ClaimTypes.Role, r)));
+            claims.AddRange(audiences.Select(a => new Claim(JwtRegisteredClaimNames.Aud, a)));
 
             var token = new JwtSecurityToken(
                 issuer: jwtSettings["Issuer"],
-                audience: jwtSettings["Audience"],
                 claims: claims,
                 expires: expiration,
                 signingCredentials: credentials);
