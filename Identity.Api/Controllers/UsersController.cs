@@ -7,7 +7,7 @@ namespace Identity.Api.Controllers
 {
     [ApiController]
     [Route("api/users")]
-    [Authorize(Roles = "Admin,Customer")]
+    [Authorize(Roles = "Admin,RestaurantOwner")]
     public class UsersController : ControllerBase
     {
         private readonly UserService _userService;

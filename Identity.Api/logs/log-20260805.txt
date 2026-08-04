@@ -1,0 +1,546 @@
+2026-08-05 01:24:49.927 +03:00 [INF] User profile is available. Using 'C:\Users\ragha\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-08-05 01:24:54.889 +03:00 [INF] Executed DbCommand (254ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Description], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @normalizedName
+2026-08-05 01:24:55.492 +03:00 [INF] Executed DbCommand (174ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Description], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @normalizedName
+2026-08-05 01:24:55.619 +03:00 [INF] Executed DbCommand (107ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Description], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @normalizedName
+2026-08-05 01:24:55.655 +03:00 [WRN] AdminSeed:Email / Username / Password are not fully configured - skipping bootstrap admin user. Set them (e.g. via user-secrets or environment variables) if you need one created on startup.
+2026-08-05 01:24:56.394 +03:00 [INF] Executed DbCommand (127ms) [Parameters=[@cutoff='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[CreatedByIp], [r].[CreatedDate], [r].[ExpirationDate], [r].[IsRevoked], [r].[Token], [r].[UpdatedDate], [r].[UserAgent], [r].[UserId]
+FROM [RefreshTokenss] AS [r]
+WHERE [r].[IsRevoked] = CAST(1 AS bit) OR [r].[ExpirationDate] < @cutoff
+2026-08-05 01:24:56.624 +03:00 [INF] Now listening on: https://localhost:7165
+2026-08-05 01:24:56.630 +03:00 [INF] Now listening on: http://localhost:5267
+2026-08-05 01:24:57.447 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-08-05 01:24:57.449 +03:00 [INF] Hosting environment: Development
+2026-08-05 01:24:57.451 +03:00 [INF] Content root path: C:\Users\ragha\source\repos\Identity\Identity\Identity.Api
+2026-08-05 01:24:57.600 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7165/swagger/index.html - null null
+2026-08-05 01:24:58.227 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7165/swagger/index.html - 304 null null 632.9712ms
+2026-08-05 01:24:58.268 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7165/swagger/index.css - null null
+2026-08-05 01:24:58.285 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7165/swagger/index.js - null null
+2026-08-05 01:24:58.317 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7165/_vs/browserLink - null null
+2026-08-05 01:24:58.350 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7165/swagger/index.js - 304 null null 65.3526ms
+2026-08-05 01:24:58.268 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7165/swagger/swagger-ui-bundle.js - null null
+2026-08-05 01:24:58.369 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7165/swagger/index.css - 304 null null 101.5015ms
+2026-08-05 01:24:58.268 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7165/swagger/swagger-ui.css - null null
+2026-08-05 01:24:58.275 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7165/swagger/swagger-ui-standalone-preset.js - null null
+2026-08-05 01:24:58.268 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7165/_framework/aspnetcore-browser-refresh.js - null null
+2026-08-05 01:24:58.427 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7165/swagger/swagger-ui-bundle.js - 304 null null 159.6841ms
+2026-08-05 01:24:58.510 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7165/swagger/swagger-ui.css - 304 null null 242.8818ms
+2026-08-05 01:24:58.529 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7165/swagger/swagger-ui-standalone-preset.js - 304 null null 257.2714ms
+2026-08-05 01:24:58.565 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7165/_framework/aspnetcore-browser-refresh.js - 200 14929 application/javascript; charset=utf-8 298.226ms
+2026-08-05 01:24:58.574 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7165/_vs/browserLink - 200 null text/javascript; charset=UTF-8 257.253ms
+2026-08-05 01:24:58.948 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7165/swagger/v1/swagger.json - null null
+2026-08-05 01:24:59.042 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7165/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 93.8268ms
+2026-08-05 01:27:06.652 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7165/api/auth/register - application/json 180
+2026-08-05 01:27:06.687 +03:00 [INF] CORS policy execution failed.
+2026-08-05 01:27:06.692 +03:00 [INF] Request origin https://localhost:7288 does not have permission to access the resource.
+2026-08-05 01:27:06.828 +03:00 [INF] Executing endpoint 'Identity.Api.Controllers.AuthController.Register (Identity.Api)'
+2026-08-05 01:27:06.887 +03:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(Identity.Application.DTOs.Auth.RegisterRequest) on controller Identity.Api.Controllers.AuthController (Identity.Api).
+2026-08-05 01:27:07.318 +03:00 [INF] Executed DbCommand (203ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Description], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @normalizedName
+2026-08-05 01:27:07.729 +03:00 [INF] Executed DbCommand (152ms) [Parameters=[@normalizedUserName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UpdatedDate], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @normalizedUserName
+2026-08-05 01:27:07.919 +03:00 [INF] Executed DbCommand (99ms) [Parameters=[@normalizedEmail='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UpdatedDate], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @normalizedEmail
+2026-08-05 01:27:08.391 +03:00 [INF] Executed DbCommand (128ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (DbType = DateTime2), @p4='?' (Size = 256), @p5='?' (DbType = Boolean), @p6='?' (Size = 150), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTimeOffset), @p9='?' (Size = 256), @p10='?' (Size = 256), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (DbType = DateTime2), @p17='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [CreatedDate], [Email], [EmailConfirmed], [FullName], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UpdatedDate], [UserName])
+OUTPUT INSERTED.[IsActive]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17);
+2026-08-05 01:27:08.702 +03:00 [INF] Executed DbCommand (118ms) [Parameters=[@normalizedRoleName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Description], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @normalizedRoleName
+2026-08-05 01:27:09.164 +03:00 [INF] Executed DbCommand (206ms) [Parameters=[@p='?' (DbType = Guid), @p1='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[RoleId]
+FROM [UserRoles] AS [u]
+WHERE [u].[UserId] = @p AND [u].[RoleId] = @p1
+2026-08-05 01:27:09.368 +03:00 [INF] Executed DbCommand (174ms) [Parameters=[@normalizedRoleName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Description], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @normalizedRoleName
+2026-08-05 01:27:09.570 +03:00 [INF] Executed DbCommand (128ms) [Parameters=[@normalizedUserName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UpdatedDate], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @normalizedUserName
+2026-08-05 01:27:09.775 +03:00 [INF] Executed DbCommand (176ms) [Parameters=[@normalizedEmail='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UpdatedDate], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @normalizedEmail
+2026-08-05 01:27:10.288 +03:00 [INF] Executed DbCommand (191ms) [Parameters=[@p18='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p19='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (Size = 150), @p6='?' (DbType = Boolean), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTimeOffset), @p9='?' (Size = 256), @p10='?' (Size = 256), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (DbType = DateTime2), @p17='?' (Size = 256), @p20='?' (DbType = Guid), @p21='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [CreatedDate] = @p2, [Email] = @p3, [EmailConfirmed] = @p4, [FullName] = @p5, [IsActive] = @p6, [LockoutEnabled] = @p7, [LockoutEnd] = @p8, [NormalizedEmail] = @p9, [NormalizedUserName] = @p10, [PasswordHash] = @p11, [PhoneNumber] = @p12, [PhoneNumberConfirmed] = @p13, [SecurityStamp] = @p14, [TwoFactorEnabled] = @p15, [UpdatedDate] = @p16, [UserName] = @p17
+OUTPUT 1
+WHERE [Id] = @p18 AND [ConcurrencyStamp] = @p19;
+INSERT INTO [UserRoles] ([RoleId], [UserId])
+VALUES (@p20, @p21);
+2026-08-05 01:27:10.737 +03:00 [INF] Executed DbCommand (105ms) [Parameters=[@userId='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Name]
+FROM [UserRoles] AS [u]
+INNER JOIN [AspNetRoles] AS [a] ON [u].[RoleId] = [a].[Id]
+WHERE [u].[UserId] = @userId
+2026-08-05 01:27:11.106 +03:00 [INF] Executed DbCommand (151ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 50), @p5='?' (Size = 500), @p6='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AuditLogs] ([Id], [Action], [DateTime], [Details], [IpAddress], [UserAgent], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2026-08-05 01:27:11.516 +03:00 [INF] Executed DbCommand (134ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 450), @p5='?' (DbType = DateTime2), @p6='?' (Size = 4000), @p7='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshTokenss] ([Id], [CreatedByIp], [CreatedDate], [ExpirationDate], [Token], [UpdatedDate], [UserAgent], [UserId])
+OUTPUT INSERTED.[IsRevoked]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2026-08-05 01:27:11.578 +03:00 [INF] Executing OkObjectResult, writing value of type 'Identity.Application.DTOs.Auth.AuthResponse'.
+2026-08-05 01:27:11.663 +03:00 [INF] Executed action Identity.Api.Controllers.AuthController.Register (Identity.Api) in 4750.6052ms
+2026-08-05 01:27:11.676 +03:00 [INF] Executed endpoint 'Identity.Api.Controllers.AuthController.Register (Identity.Api)'
+2026-08-05 01:27:11.710 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7165/api/auth/register - 200 null application/json; charset=utf-8 5058.6718ms
+2026-08-05 01:28:14.641 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7165/api/auth/login - application/json 74
+2026-08-05 01:28:14.663 +03:00 [INF] CORS policy execution failed.
+2026-08-05 01:28:14.668 +03:00 [INF] Request origin https://localhost:7288 does not have permission to access the resource.
+2026-08-05 01:28:14.676 +03:00 [INF] Executing endpoint 'Identity.Api.Controllers.AuthController.Login (Identity.Api)'
+2026-08-05 01:28:14.700 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Identity.Application.DTOs.Auth.LoginRequest) on controller Identity.Api.Controllers.AuthController (Identity.Api).
+2026-08-05 01:28:14.913 +03:00 [INF] Executed DbCommand (172ms) [Parameters=[@normalizedUserName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UpdatedDate], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @normalizedUserName
+2026-08-05 01:28:15.038 +03:00 [INF] Executed DbCommand (99ms) [Parameters=[@normalizedEmail='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UpdatedDate], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @normalizedEmail
+2026-08-05 01:28:15.408 +03:00 [INF] Executed DbCommand (110ms) [Parameters=[@userId='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Name]
+FROM [UserRoles] AS [u]
+INNER JOIN [AspNetRoles] AS [a] ON [u].[RoleId] = [a].[Id]
+WHERE [u].[UserId] = @userId
+2026-08-05 01:28:15.539 +03:00 [INF] Executed DbCommand (103ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 450), @p5='?' (DbType = DateTime2), @p6='?' (Size = 4000), @p7='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshTokenss] ([Id], [CreatedByIp], [CreatedDate], [ExpirationDate], [Token], [UpdatedDate], [UserAgent], [UserId])
+OUTPUT INSERTED.[IsRevoked]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2026-08-05 01:28:15.721 +03:00 [INF] Executed DbCommand (153ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 50), @p5='?' (Size = 500), @p6='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AuditLogs] ([Id], [Action], [DateTime], [Details], [IpAddress], [UserAgent], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2026-08-05 01:28:15.744 +03:00 [INF] Executing OkObjectResult, writing value of type 'Identity.Application.DTOs.Auth.AuthResponse'.
+2026-08-05 01:28:15.756 +03:00 [INF] Executed action Identity.Api.Controllers.AuthController.Login (Identity.Api) in 1038.7948ms
+2026-08-05 01:28:15.767 +03:00 [INF] Executed endpoint 'Identity.Api.Controllers.AuthController.Login (Identity.Api)'
+2026-08-05 01:28:15.779 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7165/api/auth/login - 200 null application/json; charset=utf-8 1138.1853ms
+2026-08-05 01:29:49.934 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7165/api/auth/register - application/json 195
+2026-08-05 01:29:49.957 +03:00 [INF] CORS policy execution failed.
+2026-08-05 01:29:49.962 +03:00 [INF] Request origin https://localhost:7288 does not have permission to access the resource.
+2026-08-05 01:29:49.994 +03:00 [INF] Executing endpoint 'Identity.Api.Controllers.AuthController.Register (Identity.Api)'
+2026-08-05 01:29:50.003 +03:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(Identity.Application.DTOs.Auth.RegisterRequest) on controller Identity.Api.Controllers.AuthController (Identity.Api).
+2026-08-05 01:29:50.239 +03:00 [INF] Executed DbCommand (143ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Description], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @normalizedName
+2026-08-05 01:29:50.658 +03:00 [INF] Executed DbCommand (196ms) [Parameters=[@normalizedUserName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UpdatedDate], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @normalizedUserName
+2026-08-05 01:29:50.858 +03:00 [INF] Executed DbCommand (145ms) [Parameters=[@normalizedEmail='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UpdatedDate], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @normalizedEmail
+2026-08-05 01:29:51.060 +03:00 [INF] Executed DbCommand (168ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (DbType = DateTime2), @p4='?' (Size = 256), @p5='?' (DbType = Boolean), @p6='?' (Size = 150), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTimeOffset), @p9='?' (Size = 256), @p10='?' (Size = 256), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (DbType = DateTime2), @p17='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [CreatedDate], [Email], [EmailConfirmed], [FullName], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UpdatedDate], [UserName])
+OUTPUT INSERTED.[IsActive]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17);
+2026-08-05 01:29:51.266 +03:00 [INF] Executed DbCommand (160ms) [Parameters=[@normalizedRoleName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Description], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @normalizedRoleName
+2026-08-05 01:29:51.471 +03:00 [INF] Executed DbCommand (171ms) [Parameters=[@p='?' (DbType = Guid), @p1='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[RoleId]
+FROM [UserRoles] AS [u]
+WHERE [u].[UserId] = @p AND [u].[RoleId] = @p1
+2026-08-05 01:29:51.673 +03:00 [INF] Executed DbCommand (156ms) [Parameters=[@normalizedRoleName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Description], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @normalizedRoleName
+2026-08-05 01:29:51.806 +03:00 [INF] Executed DbCommand (124ms) [Parameters=[@normalizedUserName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UpdatedDate], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @normalizedUserName
+2026-08-05 01:29:51.961 +03:00 [INF] Executed DbCommand (148ms) [Parameters=[@normalizedEmail='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UpdatedDate], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @normalizedEmail
+2026-08-05 01:29:52.174 +03:00 [INF] Executed DbCommand (102ms) [Parameters=[@p18='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p19='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (Size = 150), @p6='?' (DbType = Boolean), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTimeOffset), @p9='?' (Size = 256), @p10='?' (Size = 256), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (DbType = DateTime2), @p17='?' (Size = 256), @p20='?' (DbType = Guid), @p21='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [CreatedDate] = @p2, [Email] = @p3, [EmailConfirmed] = @p4, [FullName] = @p5, [IsActive] = @p6, [LockoutEnabled] = @p7, [LockoutEnd] = @p8, [NormalizedEmail] = @p9, [NormalizedUserName] = @p10, [PasswordHash] = @p11, [PhoneNumber] = @p12, [PhoneNumberConfirmed] = @p13, [SecurityStamp] = @p14, [TwoFactorEnabled] = @p15, [UpdatedDate] = @p16, [UserName] = @p17
+OUTPUT 1
+WHERE [Id] = @p18 AND [ConcurrencyStamp] = @p19;
+INSERT INTO [UserRoles] ([RoleId], [UserId])
+VALUES (@p20, @p21);
+2026-08-05 01:29:52.411 +03:00 [INF] Executed DbCommand (101ms) [Parameters=[@userId='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Name]
+FROM [UserRoles] AS [u]
+INNER JOIN [AspNetRoles] AS [a] ON [u].[RoleId] = [a].[Id]
+WHERE [u].[UserId] = @userId
+2026-08-05 01:29:52.539 +03:00 [INF] Executed DbCommand (106ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 50), @p5='?' (Size = 500), @p6='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AuditLogs] ([Id], [Action], [DateTime], [Details], [IpAddress], [UserAgent], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2026-08-05 01:29:52.799 +03:00 [INF] Executed DbCommand (214ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 450), @p5='?' (DbType = DateTime2), @p6='?' (Size = 4000), @p7='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshTokenss] ([Id], [CreatedByIp], [CreatedDate], [ExpirationDate], [Token], [UpdatedDate], [UserAgent], [UserId])
+OUTPUT INSERTED.[IsRevoked]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2026-08-05 01:29:52.877 +03:00 [INF] Executing OkObjectResult, writing value of type 'Identity.Application.DTOs.Auth.AuthResponse'.
+2026-08-05 01:29:52.903 +03:00 [INF] Executed action Identity.Api.Controllers.AuthController.Register (Identity.Api) in 2882.3626ms
+2026-08-05 01:29:52.918 +03:00 [INF] Executed endpoint 'Identity.Api.Controllers.AuthController.Register (Identity.Api)'
+2026-08-05 01:29:52.934 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7165/api/auth/register - 200 null application/json; charset=utf-8 3000.2799ms
+2026-08-05 01:30:34.162 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7165/api/auth/login - application/json 79
+2026-08-05 01:30:34.171 +03:00 [INF] CORS policy execution failed.
+2026-08-05 01:30:34.172 +03:00 [INF] Request origin https://localhost:7288 does not have permission to access the resource.
+2026-08-05 01:30:34.176 +03:00 [INF] Executing endpoint 'Identity.Api.Controllers.AuthController.Login (Identity.Api)'
+2026-08-05 01:30:34.179 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Identity.Application.DTOs.Auth.LoginRequest) on controller Identity.Api.Controllers.AuthController (Identity.Api).
+2026-08-05 01:30:34.374 +03:00 [INF] Executed DbCommand (190ms) [Parameters=[@normalizedUserName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UpdatedDate], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @normalizedUserName
+2026-08-05 01:30:34.579 +03:00 [INF] Executed DbCommand (193ms) [Parameters=[@normalizedEmail='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UpdatedDate], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @normalizedEmail
+2026-08-05 01:30:35.194 +03:00 [INF] Executed DbCommand (232ms) [Parameters=[@userId='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Name]
+FROM [UserRoles] AS [u]
+INNER JOIN [AspNetRoles] AS [a] ON [u].[RoleId] = [a].[Id]
+WHERE [u].[UserId] = @userId
+2026-08-05 01:30:35.401 +03:00 [INF] Executed DbCommand (177ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 450), @p5='?' (DbType = DateTime2), @p6='?' (Size = 4000), @p7='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshTokenss] ([Id], [CreatedByIp], [CreatedDate], [ExpirationDate], [Token], [UpdatedDate], [UserAgent], [UserId])
+OUTPUT INSERTED.[IsRevoked]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2026-08-05 01:30:35.553 +03:00 [INF] Executed DbCommand (131ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 50), @p5='?' (Size = 500), @p6='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AuditLogs] ([Id], [Action], [DateTime], [Details], [IpAddress], [UserAgent], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2026-08-05 01:30:35.569 +03:00 [INF] Executing OkObjectResult, writing value of type 'Identity.Application.DTOs.Auth.AuthResponse'.
+2026-08-05 01:30:35.573 +03:00 [INF] Executed action Identity.Api.Controllers.AuthController.Login (Identity.Api) in 1391.2374ms
+2026-08-05 01:30:35.577 +03:00 [INF] Executed endpoint 'Identity.Api.Controllers.AuthController.Login (Identity.Api)'
+2026-08-05 01:30:35.581 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7165/api/auth/login - 200 null application/json; charset=utf-8 1419.3431ms
+2026-08-05 01:35:48.998 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7165/api/users/6415d557-f2a9-431f-2a81-08def2778501 - null null
+2026-08-05 01:35:49.117 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenSignatureKeyNotFoundException: IDX10517: Signature validation failed. The token's kid is missing. Keys tried: 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey, KeyId: '', InternalId: '9vvq3ENe0DE4Ut_skIGKyiz0OVN562oWYDoMtZOE41Q'. , KeyId: \r\n'.
+Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'.
+Exceptions caught:
+ '[PII of type 'System.Text.StringBuilder' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignature(JsonWebToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignatureAndIssuerSecurityKey(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-08-05 01:35:49.132 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10517: Signature validation failed. The token's kid is missing. Keys tried: 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey, KeyId: '', InternalId: '9vvq3ENe0DE4Ut_skIGKyiz0OVN562oWYDoMtZOE41Q'. , KeyId: \r\n'.
+Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'.
+Exceptions caught:
+ '[PII of type 'System.Text.StringBuilder' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+2026-08-05 01:35:49.147 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin|RestaurantOwner)
+2026-08-05 01:35:49.161 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2026-08-05 01:35:49.165 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7165/api/users/6415d557-f2a9-431f-2a81-08def2778501 - 401 0 null 167.3112ms
+2026-08-05 01:40:30.121 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7165/swagger/index.html - null null
+2026-08-05 01:40:30.154 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7165/swagger/index.html - 304 null null 33.8132ms
+2026-08-05 01:40:30.191 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7165/swagger/swagger-ui.css - null null
+2026-08-05 01:40:30.192 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7165/_framework/aspnetcore-browser-refresh.js - null null
+2026-08-05 01:40:30.193 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7165/swagger/swagger-ui-bundle.js - null null
+2026-08-05 01:40:30.191 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7165/swagger/index.css - null null
+2026-08-05 01:40:30.230 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7165/swagger/swagger-ui.css - 304 null null 38.8789ms
+2026-08-05 01:40:30.211 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7165/swagger/index.js - null null
+2026-08-05 01:40:30.211 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7165/swagger/swagger-ui-standalone-preset.js - null null
+2026-08-05 01:40:30.217 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7165/_vs/browserLink - null null
+2026-08-05 01:40:30.252 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7165/_framework/aspnetcore-browser-refresh.js - 200 14929 application/javascript; charset=utf-8 59.8298ms
+2026-08-05 01:40:30.265 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7165/swagger/swagger-ui-bundle.js - 304 null null 71.789ms
+2026-08-05 01:40:30.279 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7165/swagger/index.css - 304 null null 87.9848ms
+2026-08-05 01:40:30.308 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7165/swagger/index.js - 304 null null 96.8418ms
+2026-08-05 01:40:30.320 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7165/swagger/swagger-ui-standalone-preset.js - 304 null null 108.5332ms
+2026-08-05 01:40:30.391 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7165/_vs/browserLink - 200 null text/javascript; charset=UTF-8 174.7747ms
+2026-08-05 01:40:30.953 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7165/swagger/v1/swagger.json - null null
+2026-08-05 01:40:30.963 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7165/swagger/favicon-32x32.png - null null
+2026-08-05 01:40:30.968 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7165/swagger/favicon-32x32.png - 304 null null 4.9701ms
+2026-08-05 01:40:30.981 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7165/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 28.4362ms
+2026-08-05 01:42:01.577 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7165/api/auth/register - application/json 184
+2026-08-05 01:42:01.592 +03:00 [INF] CORS policy execution failed.
+2026-08-05 01:42:01.596 +03:00 [INF] Request origin https://localhost:7165 does not have permission to access the resource.
+2026-08-05 01:42:01.605 +03:00 [INF] Executing endpoint 'Identity.Api.Controllers.AuthController.Register (Identity.Api)'
+2026-08-05 01:42:01.613 +03:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(Identity.Application.DTOs.Auth.RegisterRequest) on controller Identity.Api.Controllers.AuthController (Identity.Api).
+2026-08-05 01:42:02.527 +03:00 [INF] Executed DbCommand (112ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Description], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @normalizedName
+2026-08-05 01:42:02.855 +03:00 [INF] Executed DbCommand (107ms) [Parameters=[@normalizedUserName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UpdatedDate], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @normalizedUserName
+2026-08-05 01:42:02.974 +03:00 [INF] Executed DbCommand (109ms) [Parameters=[@normalizedEmail='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UpdatedDate], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @normalizedEmail
+2026-08-05 01:42:03.091 +03:00 [INF] Executed DbCommand (110ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (DbType = DateTime2), @p4='?' (Size = 256), @p5='?' (DbType = Boolean), @p6='?' (Size = 150), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTimeOffset), @p9='?' (Size = 256), @p10='?' (Size = 256), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (DbType = DateTime2), @p17='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [CreatedDate], [Email], [EmailConfirmed], [FullName], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UpdatedDate], [UserName])
+OUTPUT INSERTED.[IsActive]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17);
+2026-08-05 01:42:03.215 +03:00 [INF] Executed DbCommand (110ms) [Parameters=[@normalizedRoleName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Description], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @normalizedRoleName
+2026-08-05 01:42:03.337 +03:00 [INF] Executed DbCommand (106ms) [Parameters=[@p='?' (DbType = Guid), @p1='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[RoleId]
+FROM [UserRoles] AS [u]
+WHERE [u].[UserId] = @p AND [u].[RoleId] = @p1
+2026-08-05 01:42:03.470 +03:00 [INF] Executed DbCommand (123ms) [Parameters=[@normalizedRoleName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Description], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @normalizedRoleName
+2026-08-05 01:42:03.642 +03:00 [INF] Executed DbCommand (158ms) [Parameters=[@normalizedUserName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UpdatedDate], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @normalizedUserName
+2026-08-05 01:42:03.796 +03:00 [INF] Executed DbCommand (125ms) [Parameters=[@normalizedEmail='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UpdatedDate], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @normalizedEmail
+2026-08-05 01:42:04.014 +03:00 [INF] Executed DbCommand (105ms) [Parameters=[@p18='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p19='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (Size = 150), @p6='?' (DbType = Boolean), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTimeOffset), @p9='?' (Size = 256), @p10='?' (Size = 256), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (DbType = DateTime2), @p17='?' (Size = 256), @p20='?' (DbType = Guid), @p21='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [CreatedDate] = @p2, [Email] = @p3, [EmailConfirmed] = @p4, [FullName] = @p5, [IsActive] = @p6, [LockoutEnabled] = @p7, [LockoutEnd] = @p8, [NormalizedEmail] = @p9, [NormalizedUserName] = @p10, [PasswordHash] = @p11, [PhoneNumber] = @p12, [PhoneNumberConfirmed] = @p13, [SecurityStamp] = @p14, [TwoFactorEnabled] = @p15, [UpdatedDate] = @p16, [UserName] = @p17
+OUTPUT 1
+WHERE [Id] = @p18 AND [ConcurrencyStamp] = @p19;
+INSERT INTO [UserRoles] ([RoleId], [UserId])
+VALUES (@p20, @p21);
+2026-08-05 01:42:04.255 +03:00 [INF] Executed DbCommand (99ms) [Parameters=[@userId='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Name]
+FROM [UserRoles] AS [u]
+INNER JOIN [AspNetRoles] AS [a] ON [u].[RoleId] = [a].[Id]
+WHERE [u].[UserId] = @userId
+2026-08-05 01:42:04.461 +03:00 [INF] Executed DbCommand (186ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 50), @p5='?' (Size = 500), @p6='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AuditLogs] ([Id], [Action], [DateTime], [Details], [IpAddress], [UserAgent], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2026-08-05 01:42:04.593 +03:00 [INF] Executed DbCommand (108ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 450), @p5='?' (DbType = DateTime2), @p6='?' (Size = 4000), @p7='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshTokenss] ([Id], [CreatedByIp], [CreatedDate], [ExpirationDate], [Token], [UpdatedDate], [UserAgent], [UserId])
+OUTPUT INSERTED.[IsRevoked]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2026-08-05 01:42:04.608 +03:00 [INF] Executing OkObjectResult, writing value of type 'Identity.Application.DTOs.Auth.AuthResponse'.
+2026-08-05 01:42:04.615 +03:00 [INF] Executed action Identity.Api.Controllers.AuthController.Register (Identity.Api) in 2986.5374ms
+2026-08-05 01:42:04.619 +03:00 [INF] Executed endpoint 'Identity.Api.Controllers.AuthController.Register (Identity.Api)'
+2026-08-05 01:42:04.624 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7165/api/auth/register - 200 null application/json; charset=utf-8 3047.4654ms
+2026-08-05 01:42:53.589 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7165/api/auth/login - application/json 77
+2026-08-05 01:42:53.611 +03:00 [INF] CORS policy execution failed.
+2026-08-05 01:42:53.616 +03:00 [INF] Request origin https://localhost:7165 does not have permission to access the resource.
+2026-08-05 01:42:53.623 +03:00 [INF] Executing endpoint 'Identity.Api.Controllers.AuthController.Login (Identity.Api)'
+2026-08-05 01:42:53.629 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Identity.Application.DTOs.Auth.LoginRequest) on controller Identity.Api.Controllers.AuthController (Identity.Api).
+2026-08-05 01:42:53.820 +03:00 [INF] Executed DbCommand (172ms) [Parameters=[@normalizedUserName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UpdatedDate], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @normalizedUserName
+2026-08-05 01:42:54.024 +03:00 [INF] Executed DbCommand (180ms) [Parameters=[@normalizedEmail='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UpdatedDate], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @normalizedEmail
+2026-08-05 01:42:54.508 +03:00 [INF] Executed DbCommand (114ms) [Parameters=[@userId='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Name]
+FROM [UserRoles] AS [u]
+INNER JOIN [AspNetRoles] AS [a] ON [u].[RoleId] = [a].[Id]
+WHERE [u].[UserId] = @userId
+2026-08-05 01:42:54.648 +03:00 [INF] Executed DbCommand (114ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 450), @p5='?' (DbType = DateTime2), @p6='?' (Size = 4000), @p7='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshTokenss] ([Id], [CreatedByIp], [CreatedDate], [ExpirationDate], [Token], [UpdatedDate], [UserAgent], [UserId])
+OUTPUT INSERTED.[IsRevoked]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2026-08-05 01:42:54.775 +03:00 [INF] Executed DbCommand (115ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 50), @p5='?' (Size = 500), @p6='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AuditLogs] ([Id], [Action], [DateTime], [Details], [IpAddress], [UserAgent], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2026-08-05 01:42:54.783 +03:00 [INF] Executing OkObjectResult, writing value of type 'Identity.Application.DTOs.Auth.AuthResponse'.
+2026-08-05 01:42:54.786 +03:00 [INF] Executed action Identity.Api.Controllers.AuthController.Login (Identity.Api) in 1143.1954ms
+2026-08-05 01:42:54.790 +03:00 [INF] Executed endpoint 'Identity.Api.Controllers.AuthController.Login (Identity.Api)'
+2026-08-05 01:42:54.794 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7165/api/auth/login - 200 null application/json; charset=utf-8 1205.3795ms
+2026-08-05 01:43:17.949 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7165/swagger/index.html - null null
+2026-08-05 01:43:17.978 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7165/swagger/index.html - 304 null null 28.4961ms
+2026-08-05 01:43:18.020 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7165/swagger/swagger-ui.css - null null
+2026-08-05 01:43:18.031 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7165/swagger/index.js - null null
+2026-08-05 01:43:18.050 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7165/swagger/swagger-ui.css - 304 null null 30.3054ms
+2026-08-05 01:43:18.070 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7165/swagger/index.js - 304 null null 38.5795ms
+2026-08-05 01:43:18.028 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7165/swagger/swagger-ui-bundle.js - null null
+2026-08-05 01:43:18.023 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7165/swagger/index.css - null null
+2026-08-05 01:43:18.028 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7165/_framework/aspnetcore-browser-refresh.js - null null
+2026-08-05 01:43:18.033 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7165/swagger/swagger-ui-standalone-preset.js - null null
+2026-08-05 01:43:18.038 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7165/_vs/browserLink - null null
+2026-08-05 01:43:18.122 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7165/swagger/swagger-ui-bundle.js - 304 null null 94.0237ms
+2026-08-05 01:43:18.158 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7165/_framework/aspnetcore-browser-refresh.js - 200 14929 application/javascript; charset=utf-8 129.6211ms
+2026-08-05 01:43:18.142 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7165/swagger/index.css - 304 null null 119.8248ms
+2026-08-05 01:43:18.172 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7165/swagger/swagger-ui-standalone-preset.js - 304 null null 139.7234ms
+2026-08-05 01:43:18.198 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7165/_vs/browserLink - 200 null text/javascript; charset=UTF-8 161.4917ms
+2026-08-05 01:43:18.261 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7165/swagger/v1/swagger.json - null null
+2026-08-05 01:43:18.267 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7165/swagger/favicon-32x32.png - null null
+2026-08-05 01:43:18.271 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7165/swagger/favicon-32x32.png - 304 null null 4.3929ms
+2026-08-05 01:43:18.276 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7165/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 14.8188ms
+2026-08-05 01:44:24.187 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7165/api/auth/register - application/json 207
+2026-08-05 01:44:24.196 +03:00 [INF] CORS policy execution failed.
+2026-08-05 01:44:24.197 +03:00 [INF] Request origin https://localhost:7165 does not have permission to access the resource.
+2026-08-05 01:44:24.199 +03:00 [INF] Executing endpoint 'Identity.Api.Controllers.AuthController.Register (Identity.Api)'
+2026-08-05 01:44:24.200 +03:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(Identity.Application.DTOs.Auth.RegisterRequest) on controller Identity.Api.Controllers.AuthController (Identity.Api).
+2026-08-05 01:44:24.345 +03:00 [INF] Executed DbCommand (138ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Description], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @normalizedName
+2026-08-05 01:44:24.637 +03:00 [INF] Executed DbCommand (126ms) [Parameters=[@normalizedUserName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UpdatedDate], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @normalizedUserName
+2026-08-05 01:44:24.757 +03:00 [INF] Executed DbCommand (100ms) [Parameters=[@normalizedEmail='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UpdatedDate], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @normalizedEmail
+2026-08-05 01:44:24.957 +03:00 [INF] Executed DbCommand (190ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (DbType = DateTime2), @p4='?' (Size = 256), @p5='?' (DbType = Boolean), @p6='?' (Size = 150), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTimeOffset), @p9='?' (Size = 256), @p10='?' (Size = 256), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (DbType = DateTime2), @p17='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [CreatedDate], [Email], [EmailConfirmed], [FullName], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UpdatedDate], [UserName])
+OUTPUT INSERTED.[IsActive]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17);
+2026-08-05 01:44:25.068 +03:00 [INF] Executed DbCommand (100ms) [Parameters=[@normalizedRoleName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Description], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @normalizedRoleName
+2026-08-05 01:44:25.177 +03:00 [INF] Executed DbCommand (97ms) [Parameters=[@p='?' (DbType = Guid), @p1='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[RoleId]
+FROM [UserRoles] AS [u]
+WHERE [u].[UserId] = @p AND [u].[RoleId] = @p1
+2026-08-05 01:44:25.378 +03:00 [INF] Executed DbCommand (186ms) [Parameters=[@normalizedRoleName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Description], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @normalizedRoleName
+2026-08-05 01:44:25.571 +03:00 [INF] Executed DbCommand (174ms) [Parameters=[@normalizedUserName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UpdatedDate], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @normalizedUserName
+2026-08-05 01:44:25.704 +03:00 [INF] Executed DbCommand (110ms) [Parameters=[@normalizedEmail='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UpdatedDate], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @normalizedEmail
+2026-08-05 01:44:25.992 +03:00 [INF] Executed DbCommand (182ms) [Parameters=[@p18='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p19='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (Size = 150), @p6='?' (DbType = Boolean), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTimeOffset), @p9='?' (Size = 256), @p10='?' (Size = 256), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (DbType = DateTime2), @p17='?' (Size = 256), @p20='?' (DbType = Guid), @p21='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [CreatedDate] = @p2, [Email] = @p3, [EmailConfirmed] = @p4, [FullName] = @p5, [IsActive] = @p6, [LockoutEnabled] = @p7, [LockoutEnd] = @p8, [NormalizedEmail] = @p9, [NormalizedUserName] = @p10, [PasswordHash] = @p11, [PhoneNumber] = @p12, [PhoneNumberConfirmed] = @p13, [SecurityStamp] = @p14, [TwoFactorEnabled] = @p15, [UpdatedDate] = @p16, [UserName] = @p17
+OUTPUT 1
+WHERE [Id] = @p18 AND [ConcurrencyStamp] = @p19;
+INSERT INTO [UserRoles] ([RoleId], [UserId])
+VALUES (@p20, @p21);
+2026-08-05 01:44:26.312 +03:00 [INF] Executed DbCommand (123ms) [Parameters=[@userId='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Name]
+FROM [UserRoles] AS [u]
+INNER JOIN [AspNetRoles] AS [a] ON [u].[RoleId] = [a].[Id]
+WHERE [u].[UserId] = @userId
+2026-08-05 01:44:26.448 +03:00 [INF] Executed DbCommand (101ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 50), @p5='?' (Size = 500), @p6='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AuditLogs] ([Id], [Action], [DateTime], [Details], [IpAddress], [UserAgent], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2026-08-05 01:44:26.598 +03:00 [INF] Executed DbCommand (131ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 450), @p5='?' (DbType = DateTime2), @p6='?' (Size = 4000), @p7='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshTokenss] ([Id], [CreatedByIp], [CreatedDate], [ExpirationDate], [Token], [UpdatedDate], [UserAgent], [UserId])
+OUTPUT INSERTED.[IsRevoked]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2026-08-05 01:44:26.618 +03:00 [INF] Executing OkObjectResult, writing value of type 'Identity.Application.DTOs.Auth.AuthResponse'.
+2026-08-05 01:44:26.628 +03:00 [INF] Executed action Identity.Api.Controllers.AuthController.Register (Identity.Api) in 2423.2341ms
+2026-08-05 01:44:26.640 +03:00 [INF] Executed endpoint 'Identity.Api.Controllers.AuthController.Register (Identity.Api)'
+2026-08-05 01:44:26.650 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7165/api/auth/register - 200 null application/json; charset=utf-8 2463.0549ms
+2026-08-05 01:45:21.599 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7165/api/auth/login - application/json 85
+2026-08-05 01:45:21.608 +03:00 [INF] CORS policy execution failed.
+2026-08-05 01:45:21.610 +03:00 [INF] Request origin https://localhost:7165 does not have permission to access the resource.
+2026-08-05 01:45:21.613 +03:00 [INF] Executing endpoint 'Identity.Api.Controllers.AuthController.Login (Identity.Api)'
+2026-08-05 01:45:21.617 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Identity.Application.DTOs.Auth.LoginRequest) on controller Identity.Api.Controllers.AuthController (Identity.Api).
+2026-08-05 01:45:21.790 +03:00 [INF] Executed DbCommand (167ms) [Parameters=[@normalizedUserName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UpdatedDate], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @normalizedUserName
+2026-08-05 01:45:21.995 +03:00 [INF] Executed DbCommand (180ms) [Parameters=[@normalizedEmail='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UpdatedDate], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @normalizedEmail
+2026-08-05 01:45:22.472 +03:00 [INF] Executed DbCommand (103ms) [Parameters=[@userId='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Name]
+FROM [UserRoles] AS [u]
+INNER JOIN [AspNetRoles] AS [a] ON [u].[RoleId] = [a].[Id]
+WHERE [u].[UserId] = @userId
+2026-08-05 01:45:22.689 +03:00 [INF] Executed DbCommand (192ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 450), @p5='?' (DbType = DateTime2), @p6='?' (Size = 4000), @p7='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshTokenss] ([Id], [CreatedByIp], [CreatedDate], [ExpirationDate], [Token], [UpdatedDate], [UserAgent], [UserId])
+OUTPUT INSERTED.[IsRevoked]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2026-08-05 01:45:22.830 +03:00 [INF] Executed DbCommand (107ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 50), @p5='?' (Size = 500), @p6='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AuditLogs] ([Id], [Action], [DateTime], [Details], [IpAddress], [UserAgent], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2026-08-05 01:45:22.853 +03:00 [INF] Executing OkObjectResult, writing value of type 'Identity.Application.DTOs.Auth.AuthResponse'.
+2026-08-05 01:45:22.863 +03:00 [INF] Executed action Identity.Api.Controllers.AuthController.Login (Identity.Api) in 1240.8709ms
+2026-08-05 01:45:22.873 +03:00 [INF] Executed endpoint 'Identity.Api.Controllers.AuthController.Login (Identity.Api)'
+2026-08-05 01:45:22.882 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7165/api/auth/login - 200 null application/json; charset=utf-8 1283.4528ms
+2026-08-05 01:47:38.752 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7165/api/users/7a5ed1f3-d7ab-4c6b-2a83-08def2778501 - null null
+2026-08-05 01:47:38.884 +03:00 [INF] Executing endpoint 'Identity.Api.Controllers.UsersController.GetById (Identity.Api)'
+2026-08-05 01:47:38.915 +03:00 [INF] Route matched with {action = "GetById", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid) on controller Identity.Api.Controllers.UsersController (Identity.Api).
+2026-08-05 01:47:39.221 +03:00 [INF] Executed DbCommand (257ms) [Parameters=[@p='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UpdatedDate], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-08-05 01:47:39.418 +03:00 [INF] Executed DbCommand (154ms) [Parameters=[@userId='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Name]
+FROM [UserRoles] AS [u]
+INNER JOIN [AspNetRoles] AS [a] ON [u].[RoleId] = [a].[Id]
+WHERE [u].[UserId] = @userId
+2026-08-05 01:47:39.450 +03:00 [INF] Executing OkObjectResult, writing value of type 'Identity.Application.DTOs.Users.UserDto'.
+2026-08-05 01:47:39.462 +03:00 [INF] Executed action Identity.Api.Controllers.UsersController.GetById (Identity.Api) in 536.0627ms
+2026-08-05 01:47:39.472 +03:00 [INF] Executed endpoint 'Identity.Api.Controllers.UsersController.GetById (Identity.Api)'
+2026-08-05 01:47:39.480 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7165/api/users/7a5ed1f3-d7ab-4c6b-2a83-08def2778501 - 200 null application/json; charset=utf-8 727.7307ms
+2026-08-05 01:53:43.702 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7165/api/users/7a5ed1f3-d7ab-4c6b-2a83-08def2778501 - null null
+2026-08-05 01:53:43.715 +03:00 [INF] Executing endpoint 'Identity.Api.Controllers.UsersController.GetById (Identity.Api)'
+2026-08-05 01:53:43.718 +03:00 [INF] Route matched with {action = "GetById", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid) on controller Identity.Api.Controllers.UsersController (Identity.Api).
+2026-08-05 01:53:44.499 +03:00 [INF] Executed DbCommand (116ms) [Parameters=[@p='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UpdatedDate], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-08-05 01:53:44.618 +03:00 [INF] Executed DbCommand (97ms) [Parameters=[@userId='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Name]
+FROM [UserRoles] AS [u]
+INNER JOIN [AspNetRoles] AS [a] ON [u].[RoleId] = [a].[Id]
+WHERE [u].[UserId] = @userId
+2026-08-05 01:53:44.644 +03:00 [INF] Executing OkObjectResult, writing value of type 'Identity.Application.DTOs.Users.UserDto'.
+2026-08-05 01:53:44.656 +03:00 [INF] Executed action Identity.Api.Controllers.UsersController.GetById (Identity.Api) in 933.8628ms
+2026-08-05 01:53:44.668 +03:00 [INF] Executed endpoint 'Identity.Api.Controllers.UsersController.GetById (Identity.Api)'
+2026-08-05 01:53:44.683 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7165/api/users/7a5ed1f3-d7ab-4c6b-2a83-08def2778501 - 200 null application/json; charset=utf-8 981.5351ms
