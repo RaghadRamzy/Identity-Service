@@ -56,11 +56,11 @@ namespace Identity.infrastructure
         ValidIssuer = jwtSettings["Issuer"],
 
         ValidateAudience = true,
-        ValidAudience = jwtSettings["Audience"],
+        ValidAudiences = jwtSettings.GetSection("Audience").Get<string[]>(),
 
         ValidateIssuerSigningKey = true,
         IssuerSigningKey = new SymmetricSecurityKey(
-            Encoding.UTF8.GetBytes(jwtSettings["Secret"]!)),
+        Encoding.UTF8.GetBytes(jwtSettings["Secret"]!)),
 
         ValidateLifetime = true,
         ClockSkew = TimeSpan.Zero
